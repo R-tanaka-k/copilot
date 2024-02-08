@@ -1,0 +1,12 @@
+; Instrumentというインタフェースを定義します
+; - Instrumentインタフェースには、playSoundメソッドとadjustSound()デフォルトメソッドを定義します
+
+package copilot.exercises.ex05.p02;
+
+public interface Instrument {
+    void playSound();
+    default void adjustSound() {
+        System.out.println("Adjusting sound");
+    }
+}
+
