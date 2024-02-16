@@ -6,11 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <h1>好きな本</h1>
-    <p>1111</p>
-
-    <h3>好きな理由</h3>
-    <p>2222</p>
+    <form action="favorite-book.html"
+    th:action="@{/book/show-favorite}">
+        <input type="text" name="book" id="book" value="本の名前">
+        <input type="text" name="reason" id="reason" value="理由">
+        <input type="submit" value="送信">
+    </form>
+   
 </body>
 </html>
